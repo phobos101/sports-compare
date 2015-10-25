@@ -5,7 +5,7 @@ Sports Compare is a website that allows you to quickly and easily compare up to 
 Simply clone this repo, then navigate to the directory and run 'rackup'.
 By default, this will allow you to navigate to localhost:9292 to see the site.
 
-![alt text](tbd "A screenshot of the project")
+<img src="https://raw.githubusercontent.com/phobos101/sports-compare/master/sports-compare-screenshot.png" alt="Sports Compare" width="480px">
 
 ###The Build
 This project was built with the following:
