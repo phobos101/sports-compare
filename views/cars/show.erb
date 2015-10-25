@@ -1,0 +1,66 @@
+<h1 class="title center-text"><%= @car.car_make %> <%= @car.car_model %></h1>
+
+<img src="<%= @car.car_feature_img%>" width="960px" alt="The <%= @car.car_make%> <%= @car.car_model%>, <%= @car.year%>" class="block">
+
+<br>
+
+<div class="columns-feature">
+	<div class="column">
+		<div class="row odd center-text feature">
+			<p>Year of Manufacture</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>MSRP</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>Horsepower</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Top Speed (mph)</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>0-62 (mph)</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Driveline Layout</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>MPG (combined)</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Petrol Type</p>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="row odd">
+			<%= @car.year %>
+		</div>
+		<div class="row even">
+			£<%= @car.msrp %>0
+		</div>
+		<div class="row odd">
+			<%= @car.horsepower %>
+		</div>
+		<div class="row even">
+			<%= @car.top_speed %>
+		</div>
+		<div class="row odd">
+			<%= @car.acceleration %> seconds
+		</div>
+		<div class="row even">
+			<%= @car.drive %>
+		</div>
+		<div class="row odd">
+			<%= @car.mpg %>
+		</div>
+		<div class="row even">
+			<%= @car.petrol_type %>
+		</div>
+	</div>
+</div>
+
+<div class="base">
+	<br><hr><br>
+	<p class="feature center-text"><a href="/cars" class="link left">Go Back</a> <a href="/cars/<%= @car.id %>/edit" class="link right">Edit this car</a></p>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>Sports Compare</title>
+
+	</head>
+	<body>
+
+		<div id="wrapper">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/cars">Compare</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main><%= yield %></main>
+		</div>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="http://www.github.com/phobos101">Created by: Rob Wilson</a></li>
+					<li><a href="#">&copy; Sports Compare</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script type="text/javascript" src="/js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+<h1 class="title center-text">Sports Compare</h1>
+
+<% car1 = @cars.find(1)%>
+<% car2 = @cars.find(2)%>
+<% car3 = @cars.find(3)%>
+
+<br><hr><br>
+
+<div class="columns">
+	<div class="column">
+		<h3 class="col-title center-text hidden">Value</h3>
+		<div class="row odd center-text feature">
+			<p>Make</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Model</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>Year of Manufacture</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>MSRP</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>Horsepower</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Top Speed (mph)</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>0-62 (mph)</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Driveline Layout</p>
+		</div>
+		<div class="row odd center-text feature">
+			<p>MPG (combined)</p>
+		</div>
+		<div class="row even center-text feature">
+			<p>Petrol Type</p>
+		</div>
+	</div>
+
+	<div class="column">
+		<a href="/cars/<%= car1.id %>" class="link">
+			<h3 class="col-title center-text">First Car</h3>
+		</a>
+		<div class="row odd">
+			<%= car1.car_make %>
+		</div>
+		<div class="row even">
+			<%= car1.car_model %>
+		</div>
+		<div class="row odd">
+			<%= car1.year %>
+		</div>
+		<div class="row even">
+			£<%= car1.msrp %>0
+		</div>
+		<div class="row odd">
+			<%= car1.horsepower %>
+		</div>
+		<div class="row even">
+			<%= car1.top_speed %>
+		</div>
+		<div class="row odd">
+			<%= car1.acceleration %> seconds
+		</div>
+		<div class="row even">
+			<%= car1.drive %>
+		</div>
+		<div class="row odd">
+			<%= car1.mpg %>
+		</div>
+		<div class="row even">
+			<%= car1.petrol_type %>
+		</div>
+	</div>
+
+	<div class="column">
+		<a href="/cars/<%= car2.id %>" class="link">
+			<h3 class="col-title center-text">Second Car</h3>
+		</a>
+		<div class="row odd">
+			<%= car2.car_make %>
+		</div>
+		<div class="row even">
+			<%= car2.car_model %>
+		</div>
+		<div class="row odd">
+			<%= car2.year %>
+		</div>
+		<div class="row even">
+			£<%= car2.msrp %>0
+		</div>
+		<div class="row odd">
+			<%= car2.horsepower %>
+		</div>
+		<div class="row even">
+			<%= car2.top_speed %>
+		</div>
+		<div class="row odd">
+			<%= car2.acceleration %> seconds
+		</div>
+		<div class="row even">
+			<%= car2.drive %>
+		</div>
+		<div class="row odd">
+			<%= car2.mpg %>
+		</div>
+		<div class="row even">
+			<%= car2.petrol_type %>
+		</div>
+	</div>
+
+	<div class="column">
+		<a href="/cars/<%= car3.id %>" class="link">
+			<h3 class="col-title center-text">Third Car</h3>
+		</a>
+		<div class="row odd">
+			<%= car3.car_make %>
+		</div>
+		<div class="row even">
+			<%= car3.car_model %>
+		</div>
+		<div class="row odd">
+			<%= car3.year %>
+		</div>
+		<div class="row even">
+			£<%= car3.msrp %>0
+		</div>
+		<div class="row odd">
+			<%= car3.horsepower %>
+		</div>
+		<div class="row even">
+			<%= car3.top_speed %>
+		</div>
+		<div class="row odd">
+			<%= car3.acceleration %> seconds
+		</div>
+		<div class="row even">
+			<%= car3.drive %>
+		</div>
+		<div class="row odd">
+			<%= car3.mpg %>
+		</div>
+		<div class="row even">
+			<%= car3.petrol_type %>
+		</div>
+	</div>
+</div>
+
+<div class="columns">
+	<div class="column">
+		<div class="img-row odd center-text feature" height="135px">
+			<p>Image</p>
+		</div>
+	</div>
+	<div class="column">
+		<div class="row odd">
+			<a href="/cars/<%= car1.id %>">
+				<img src="<%= car1.car_thumbnail %>" width="240px" height="135px">
+			</a>
+		</div>
+	</div>
+	<div class="column">
+		<div class="row odd">
+			<a href="/cars/<%= car2.id %>">
+				<img src="<%= car2.car_thumbnail %>" width="240px" height="135px">
+			</a>
+		</div>
+	</div>
+	<div class="column">
+		<div class="row odd">
+			<a href="/cars/<%= car3.id %>">
+				<img src="<%= car3.car_thumbnail %>" width="240px" height="135px">
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="base">
+	<br><hr><br>
+	<p class="feature center-text"><a href="/cars/new" class="link">Add a new car</a></p>
+</div>

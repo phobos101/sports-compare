@@ -1,0 +1,55 @@
+<form action="/cars/<%= @car.id %>" method="post">
+	<input type="hidden" name="_method" value="put">
+	<ul class ="glow">
+		<li>
+			<p>Make: </p><input type="text" name="car[car_make]" placeholder="Car manufacturer" value="<%= @car.car_make %>">
+		</li>
+		<li>
+			<p>Model: </p><input type="text" name="car[car_model]" placeholder="Car Model." value="<%= @car.car_model %>">
+		</li>
+		<li>
+			<p>Year: </p><input type="integer" name="car[year]" placeholder="Year of Model." value="<%= @car.year %>">
+		</li>
+		<li>
+			<p>MSRP: </p><input type="float" name="car[msrp]" placeholder="Recommended Retail Price." value="<%= @car.msrp %>">
+		</li>
+		<li>
+			<p>HP: </p><input type="text" name="car[horsepower]" placeholder="Horsepower (hp)." value="<%= @car.horsepower %>">
+		</li>
+		<li>
+			<p>Top Speed: </p><input type="integer" name="car[top_speed]" placeholder="Top Speed (mph)." value="<%= @car.top_speed %>">
+		</li>
+		<li>
+			<p>Acceleration: </p><input type="float" name="car[acceleration]" placeholder="0-60 Time (s)." value="<%= @car.acceleration %>">
+		</li>
+		<li>
+			<p>Driveline: </p><input type="text" name="car[drive]" placeholder="Drive e.g Real wheel drive, Front wheel drive, etc." value="<%= @car.drive %>">
+		</li>
+		<li>
+			<p>MPG: </p><input type="float" name="car[mpg]" placeholder="Miles Per Gallon (combined)." value="<%= @car.mpg %>">			
+		</li>
+		<li>
+			<p>Petrol Type: </p><input type="text" name="car[petrol_type]" placeholder="Petrol Type e.g Diesel, Unleaded." value="<%= @car.petrol_type %>">
+		</li>
+		<li>
+			<p>Thumbnail: </p><input type="text" name="car[car_thumbnail]" placeholder="New URL For Car Image" value="<%= @car.car_thumbnail %>">
+		</li>
+		<li>
+			<p>Feature Image: </p><input type="text" name="car[car_feature_img]" placeholder="Relative path for feature img" value="<%= @car.car_feature_img %>">
+		</li>
+	</ul>
+	<br>
+	<input type="submit" value="Edit">
+</form>
+
+<br>
+
+<form action="/cars/<%= @car.id %>/delete" method="post">
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" value="Delete">
+</form>
+
+<div class="base">
+	<br><hr><br>
+	<p class="feature center-text"><a href="/cars" class="link">Go Back</a></p>
+</div>

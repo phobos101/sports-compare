@@ -1,0 +1,61 @@
+<form action="/cars" method="post">
+
+	<ul class ="glow">
+		<li>
+			<p>Make: </p><input type="text" name="car[car_make]" placeholder="Car manufacturer.">
+		</li>
+		<li>
+			<p>Model: </p><input type="text" name="car[car_model]" placeholder="Car Model.">
+		</li>
+		<li>
+			<p>Year: </p><input type="integer" name="car[year]" placeholder="Year of Model.">
+		</li>
+		<li>
+			<p>MSRP: </p><input type="float" name="car[msrp]" placeholder="Recommended Retail Price.">
+		</li>
+		<li>
+			<p>HP: </p><input type="text" name="car[horsepower]" placeholder="Horsepower (hp).">
+		</li>
+		<li>
+			<p>Top Speed: </p><input type="integer" name="car[top_speed]" placeholder="Top Speed (mph).">
+		</li>
+		<li>
+			<p>Acceleration: </p><input type="float" name="car[acceleration]" placeholder="0-60 Time (s).">
+		</li>
+		<li>
+			<p>Driveline: </p><input type="text" name="car[drive]" placeholder="Drive e.g Real wheel drive, Front wheel drive, etc.">
+		</li>
+		<li>
+			<p>MPG: </p><input type="float" name="car[mpg]" placeholder="Miles Per Gallon (combined).">			
+		</li>
+		<li>
+			<p>Petrol Type: </p><input type="text" name="car[petrol_type]" placeholder="Petrol Type e.g Diesel, Unleaded.">
+		</li>
+		<li>
+			<p>Thumbnail: </p><input type="text" name="car[car_thumbnail]" placeholder="New URL For Car Image">
+		</li>
+		<li>
+			<p>Feature Image: </p><input type="text" name="car[car_feature_img]" placeholder="Relative path for feature img">
+		</li>
+	</ul>
+
+<!-- 	<input type="text" name="car[car_make]" placeholder="Car Manufacturer.">
+	<input type="text" name="car[car_model]" placeholder="Car Model.">
+	<input type="integer" name="car[year]" placeholder="Year of Model.">
+	<input type="float" name="car[msrp]" placeholder="Recommended Retail Price.">
+	<input type="text" name="car[horsepower]" placeholder="Horsepower (hp).">
+	<input type="integer" name="car[top_speed]" placeholder="Top Speed (mph).">
+	<input type="float" name="car[acceleration]" placeholder="0-60 Time (s).">
+	<input type="text" name="car[drive]" placeholder="Drive e.g Real wheel drive, Front wheel drive, etc.">
+	<input type="float" name="car[mpg]" placeholder="Miles Per Gallon (combined).">
+	<input type="text" name="car[petrol_type]" placeholder="Petrol Type e.g Diesel, Unleaded.">
+	<input type="text" name="car[car_thumbnail]" placeholder="URL For Car Image">
+	<input type="text" name="car[car_feature_img]" placeholder="Relative path for feature img">
+ -->
+	<input type="submit" value="Submit">
+</form>
+
+<div class="base">
+	<br><hr><br>
+	<p class="feature center-text"><a href="/cars" class="link">Go Back</a></p>
+</div>

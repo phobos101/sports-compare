@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+em {
+	font-weight: bold;
+}
+
+#wrapper {
+  /* Force footer to the bottom of the page*/
+  min-height: 100%;
+}
+
+header, footer {
+  width: 100%;
+  background: black;
+}
+
+footer {
+  /* Force footer to the bottom of the page*/
+  position: relative;
+	margin-top: -120px; /* Negative the sum of the height of the header and footer */
+  height: 60px;
+  clear: both;
+}
+
+header nav,
+footer nav { 
+  max-width: 960px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav ul,
+footer nav ul {
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav ul li {
+  display: inline;
+  list-style-type: none;
+  height: 60px;
+  line-height: 60px;
+  float: right;
+  padding: 0 10px;
+}
+
+header nav ul li a,
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 60px auto;
+  padding-bottom: 60px;
+}
+
+main .right-text {
+  text-align: right;
+}
+
+main .center-text {
+  text-align: center;
+}
+
+main .left {
+  float: left;
+}
+
+main .right {
+  float: right;
+}
+
+main .title {
+	font-size: 2em;
+	margin: 0 0 30px;
+}
+
+main .subtitle {
+  font-size: 1.5em;
+  margin: 30px 0 30px 0;
+}
+
+main .col-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+main .info {
+	max-width: 480px;
+  margin: 0 auto;
+}
+
+main .feature {
+  font-weight: bold;
+}
+
+main .column {
+  width: 100%;
+}
+
+main .columns {
+  max-width: 960px;
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+  -moz-column-count: 4; /* Firefox */
+  column-count: 4;
+
+  -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 5px; /* Firefox */
+  column-gap: 5px;
+}
+
+main .columns-feature {
+  max-width: 960px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+
+  -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 5px; /* Firefox */
+  column-gap: 5px;
+}
+
+main .row {
+  min-height: 40px;
+  line-height: 40px;
+}
+
+main .img-row {
+  min-height: 135px;
+  line-height: 135px;
+}
+
+main .odd {
+  background-color: #E6E6E6;
+}
+
+main .even {
+  background-color: #F3F3F3;
+}
+
+main .car {
+  min-height: 135px;
+}
+
+main .base {
+  clear: both;
+}
+
+main .car-feature {
+  margin-left: 85px;
+}
+
+main .hidden {
+  color: white;
+}
+
+main .block {
+  margin: 0 auto;
+  display: block;
+}
+
+main .link {
+  text-decoration: none;
+}
+
+input {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.glow input {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  margin-bottom: 10px;
+}
+
+.glow input:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+footer nav ul li {
+	display: inline;
+  list-style-type: none;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+
+footer nav ul li:first-child {
+	float: left;
+}
+
+footer nav ul li:last-child {
+	float: right;
+}
+
+.non-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .non-mobile { display: block; }
+}
